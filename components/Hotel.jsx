@@ -38,7 +38,7 @@ const Hotel = ({ item, menu }) => {
 
         <View className="flex-row items-center bg-green-500 rounded-md px-2 py-1 mr-4 gap-2">
           <Text className="text-white text-center">{item?.aggregate_rating}</Text>
-          <Ionicons name="ios-star" size={15} color="white" />
+          <Ionicons name="star" size={15} color="white" />
         </View>
       </View>
       <View className="border-b border-gray-300 mx-4 my-2" />

@@ -28,15 +28,17 @@ const login = () => {
   }, []);
 
   async function signUpWithEmail() {
-    const { data, error } = await supabase.auth.signInWithPassword({
-      email: email,
-      password: password,
-    });
-    if (data) {
-      const token = data?.session?.access_token;
-      AsyncStorage.setItem("authToken", token);
-      router.replace("/(home)/");
-    }
+    // const { data, error } = await supabase.auth.signInWithPassword({
+    //   email: email,
+    //   password: password,
+    // });
+    // if (data) {
+    //   const token = data?.session?.access_token;
+    //   AsyncStorage.setItem("authToken", token);
+    //   router.replace("/(home)/");
+    // }
+    router.replace("/(home)/");
+
   }
 
   return (
